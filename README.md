@@ -1,12 +1,100 @@
+<div align="center">
+<img src="assets/enterprise-operations-banner.svg" alt="Enterprise Operations and Business Performance Intelligence" width="100%" />
+
 # Enterprise Operations & Business Performance Intelligence
 
-An end-to-end analytics portfolio project for a simulated India-wide business-services organisation. It demonstrates operational SQL, Python data validation, KPI reconciliation, scenario modelling, executive reporting and technology-business analysis.
+### From 500,000 synthetic operational records to validated KPIs, root-cause analysis and management decisions.
 
-## Scope and disclosure
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](scripts/run_pipeline.py) [![SQLite](https://img.shields.io/badge/SQLite-analytical%20database-003B57?logo=sqlite&logoColor=white)](data/processed/sql_results.json) [![HTML%2FJavaScript](https://img.shields.io/badge/HTML%2FJavaScript-dashboard-E34F26?logo=html5&logoColor=white)](dashboards/executive_dashboard.html) [![CI](https://github.com/anujs-maker/enterprise-operations-intelligence/actions/workflows/ci.yml/badge.svg)](https://github.com/anujs-maker/enterprise-operations-intelligence/actions/workflows/ci.yml)
 
-All data is deterministic synthetic data generated with seed `42`; no corporate or client data is represented. Findings are observations in the simulation, while opportunity values are modelled scenarios, not realised savings.
+**Synthetic portfolio project · independently developed · HTML dashboard, not native Power BI**
 
-## Run it
+[Overview](#overview) · [Dashboard](#dashboard) · [Architecture](#architecture) · [Insights](#verified-insights) · [SQL](#technical-depth) · [BA deliverables](#technology-business-analysis) · [Quick start](#quick-start)
+</div>
+
+## Overview
+
+This project simulates a multinational business-services organisation operating across five Indian cities. Leaders need dependable visibility into service volume, SLA risk, turnaround, backlog, cost and quality before deciding where to add capacity or redesign a process.
+
+The implementation connects deterministic data generation, validation, SQLite analysis, independent KPI reconciliation and a browser dashboard—relevant to Data Analyst, BI Analyst, Reporting Analyst, Technology BA and Analytics Consulting interviews.
+
+## Executive snapshot
+
+| Verified metric | Result |
+|---|---:|
+| Synthetic requests | **500,000** |
+| Completed requests | **497,839** |
+| SLA compliance | **74.60%** |
+| Average turnaround | **40.47 hours** |
+| Open backlog | **2,161** |
+| Overdue backlog | **488** |
+| Average quality score | **91.24 / 100** |
+
+These are reproducible synthetic observations as of `2026-07-01`, not corporate performance claims.
+
+## Dashboard
+
+Open [`dashboards/executive_dashboard.html`](dashboards/executive_dashboard.html) locally after running the pipeline. It provides city filtering with weighted KPI recalculation, SLA charting, backlog/overdue cards, cost-per-completed-case and quality cards, plus a scoped Gurugram Payments Operations scenario control. GitHub renders the source but does not execute its JavaScript. A native PBIX is not provided.
+
+## Architecture
+
+```mermaid
+flowchart LR
+  A[Synthetic generator<br/>seed 42] --> B[Validation & lifecycle rules]
+  B --> C[SQLite analytical model]
+  C --> D[Executed SQL analyses]
+  B --> E[Independent Python KPIs]
+  D --> F[Reconciliation report]
+  E --> F
+  F --> G[Reporting JSON datasets]
+  G --> H[Interactive HTML dashboard]
+  H --> I[Recommendations & BA deliverables]
+```
+
+## Verified insights
+
+1. **SLA risk is concentrated in Gurugram:** 63.42% compliance versus approximately 77% in the other cities.
+2. **Gurugram has the highest cost per completed case:** ₹3,914.22, versus ₹3,461.97 in Pune.
+3. **Backlog is measurable and actionable:** 2,161 open requests include 488 already overdue against SLA targets.
+4. **The scenario is scope-controlled:** June 2026 Gurugram Payments Operations includes 4,011 opened requests and 3,794 completions.
+5. **Only avoided overtime is monetised:** the scoped 15% improvement models ₹2.4648M avoided overtime less ₹250,000 implementation cost; this is not realised savings.
+
+<details><summary><b>Scenario assumptions</b></summary>
+
+1,600 assigned FTEs, 160 productive hours/FTE/month, 82% utilisation, ₹130 overtime rate and ₹250,000 implementation cost. Capacity released is reported separately from cash savings. See [`docs/scenario_assumptions.md`](docs/scenario_assumptions.md).
+</details>
+
+## Technical depth
+
+- [`scripts/run_pipeline.py`](scripts/run_pipeline.py) generates data, creates SQLite, executes SQL and fails on reconciliation mismatches.
+- [`sql/kpi_analysis.sql`](sql/kpi_analysis.sql) contains SLA, backlog ageing, complexity, productivity and window-function trend analyses.
+- [`data/processed/sql_results.json`](data/processed/sql_results.json) contains executed results.
+- [`data/processed/reconciliation_report.json`](data/processed/reconciliation_report.json) records SQL value, independent Python value, difference, tolerance and PASS/FAIL.
+
+<details><summary><b>Example analytical SQL</b></summary>
+
+```sql
+WITH ranked AS (
+  SELECT city, substr(opened_at, 1, 7) AS month, COUNT(*) AS volume,
+         LAG(COUNT(*)) OVER (PARTITION BY city ORDER BY substr(opened_at, 1, 7)) AS prior_volume
+  FROM requests GROUP BY city, substr(opened_at, 1, 7)
+)
+SELECT city, month, volume, prior_volume FROM ranked;
+```
+</details>
+
+## Technology Business Analysis
+
+- [`BRD.md`](docs/business_requirements/BRD.md) — problem, stakeholders, requirements and acceptance;
+- [`KPI_dictionary.md`](docs/data_dictionary/KPI_dictionary.md) — definitions, grain and formulas;
+- [`data_model.md`](docs/data_dictionary/data_model.md) — relationships and leakage controls;
+- [`UAT_cases.md`](docs/uat/UAT_cases.md) — acceptance scenarios;
+- [`traceability.md`](docs/traceability.md) — requirement-to-evidence mapping;
+- [`findings.md`](reports/findings/findings.md) — quantified observations and recommendations.
+
+Stakeholders, approvals and UAT ownership are explicitly simulated.
+
+## Quick start
 
 ```bash
 python3 scripts/run_pipeline.py
@@ -14,28 +102,20 @@ python3 -m unittest discover -s tests -v
 open dashboards/executive_dashboard.html
 ```
 
-The standard-library implementation runs without external services. Optional pandas/DuckDB upgrades are documented in `requirements.txt` and the SQL is also runnable in SQLite/DuckDB with minor date-function adjustments.
+The core workflow uses the Python standard library. Optional pandas/DuckDB dependencies are in [`requirements.txt`](requirements.txt). The private `INTERVIEW_PLAYBOOK.md` is excluded from the public repository.
 
-## Outputs
+## Testing and quality
 
-- `data/processed/requests.csv` and linked dimension tables (500,000 generated requests)
-- `reports/executive_summary/executive_memo.md`
-- `reports/findings/findings.md`
-- `data/processed/reconciliation_report.json` (executed SQL/Python KPI reconciliation)
-- `dashboards/executive_dashboard.html` (interactive HTML dashboard, not a PBIX)
-- `powerbi/README.md` and `powerbi/dax_measures.md` for native Power BI reconstruction
-- BRD, stakeholder map, requirements, KPI dictionary, process/data-flow diagrams, UAT and traceability under `docs/`
-- `INTERVIEW_PLAYBOOK.md` is intentionally private and excluded from GitHub
+The suite has **11 passing tests** covering reproducibility, referential integrity, lifecycle logic, SLA boundaries, backlog ageing, scenario assumptions, SQL/Python reconciliation, corrupted-side detection, zero-volume handling and dashboard data contracts. GitHub Actions runs the pipeline and tests: [`.github/workflows/ci.yml`](.github/workflows/ci.yml).
 
-## Architecture
+## Limitations and disclosure
 
-Synthetic generator → validation/KPI pipeline → SQLite analytical model → SQL analysis → JSON reporting tables → browser dashboard. A Power BI-ready star-schema export and DAX definitions are included, but a genuine PBIX cannot be authored in this environment.
-
-The pipeline fails when SQL and independent Python KPI values disagree beyond documented tolerances. The financial scenario is monthly and scoped to Gurugram Payments Operations rather than applying an organisation-wide percentage; assumptions are documented in `docs/scenario_assumptions.md`.
-
-## Reproducibility
-
-`scripts/run_pipeline.py` recreates the dataset and reports from scratch. No credentials, virtual environments or generated large files are committed.
+- Data is deterministic synthetic data generated with seed `42`.
+- Findings describe the simulation and are not client results.
+- Financial outputs are assumption-based opportunities, not realised savings.
+- The dashboard is HTML/JavaScript, not native Power BI.
+- No PBIX is included because a genuine PBIX could not be authored and verified here.
+- GitHub does not execute dashboard JavaScript directly from the README; use the local dashboard file.
 
 ## License
 
