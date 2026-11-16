@@ -1,0 +1,62 @@
+{
+  "kpis": {
+    "total_requests": 50000,
+    "closed_requests": 49775,
+    "sla_compliance_pct": 74.65,
+    "avg_turnaround_hours": 40.34,
+    "backlog": 225,
+    "operating_cost_inr": 177830890.44,
+    "avg_quality_score": 91.25
+  },
+  "by_city": {
+    "Pune": {
+      "n": 9950,
+      "breaches": 2233,
+      "cost": 34284428.86000015,
+      "hours": 390289,
+      "sla_compliance_pct": 77.56,
+      "avg_hours": 39.23,
+      "cost_inr": 34284428.86
+    },
+    "Mumbai": {
+      "n": 10050,
+      "breaches": 2239,
+      "cost": 34734731.379999965,
+      "hours": 394518,
+      "sla_compliance_pct": 77.72,
+      "avg_hours": 39.26,
+      "cost_inr": 34734731.38
+    },
+    "Gurugram": {
+      "n": 10009,
+      "breaches": 3652,
+      "cost": 39156987.9000001,
+      "hours": 445638,
+      "sla_compliance_pct": 63.51,
+      "avg_hours": 44.52,
+      "cost_inr": 39156987.9
+    },
+    "Bengaluru": {
+      "n": 9929,
+      "breaches": 2292,
+      "cost": 34400200.09000007,
+      "hours": 390922,
+      "sla_compliance_pct": 76.92,
+      "avg_hours": 39.37,
+      "cost_inr": 34400200.09
+    },
+    "Hyderabad": {
+      "n": 9837,
+      "breaches": 2204,
+      "cost": 34065733.519999966,
+      "hours": 386717,
+      "sla_compliance_pct": 77.59,
+      "avg_hours": 39.31,
+      "cost_inr": 34065733.52
+    }
+  },
+  "scenario": {
+    "intervention": "Reduce Gurugram Payments Operations turnaround by 15%",
+    "modelled_cost_avoidance_inr": 1987632.76
+  }
+}

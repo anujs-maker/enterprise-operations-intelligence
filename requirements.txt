@@ -1,0 +1,3 @@
+# Optional enhancements; the core pipeline uses Python standard library only.
+pandas>=2.0
+duckdb>=1.0

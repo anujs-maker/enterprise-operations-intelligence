@@ -1,0 +1,251 @@
+employee_id,team_id,role,tenure_months
+E0001,T01,Analyst,23
+E0002,T01,Analyst,24
+E0003,T01,Team Lead,59
+E0004,T01,Analyst,55
+E0005,T01,Senior Analyst,33
+E0006,T01,Senior Analyst,39
+E0007,T01,Team Lead,60
+E0008,T01,Analyst,71
+E0009,T01,Analyst,42
+E0010,T01,Senior Analyst,27
+E0011,T01,Senior Analyst,59
+E0012,T01,Senior Analyst,39
+E0013,T01,Senior Analyst,67
+E0014,T01,Team Lead,56
+E0015,T01,Analyst,28
+E0016,T01,Team Lead,20
+E0017,T01,Senior Analyst,9
+E0018,T01,Team Lead,64
+E0019,T01,Senior Analyst,16
+E0020,T01,Team Lead,69
+E0021,T01,Analyst,39
+E0022,T01,Analyst,23
+E0023,T01,Senior Analyst,60
+E0024,T01,Team Lead,21
+E0025,T01,Senior Analyst,14
+E0026,T01,Analyst,60
+E0027,T01,Senior Analyst,6
+E0028,T01,Senior Analyst,9
+E0029,T01,Senior Analyst,67
+E0030,T01,Senior Analyst,33
+E0031,T01,Senior Analyst,13
+E0032,T01,Senior Analyst,31
+E0033,T01,Analyst,43
+E0034,T01,Analyst,45
+E0035,T01,Analyst,20
+E0036,T01,Analyst,39
+E0037,T01,Senior Analyst,20
+E0038,T01,Team Lead,63
+E0039,T01,Senior Analyst,3
+E0040,T01,Analyst,5
+E0041,T01,Senior Analyst,30
+E0042,T01,Analyst,70
+E0043,T01,Senior Analyst,17
+E0044,T01,Senior Analyst,33
+E0045,T01,Senior Analyst,18
+E0046,T01,Analyst,33
+E0047,T01,Senior Analyst,61
+E0048,T01,Analyst,17
+E0049,T01,Senior Analyst,71
+E0050,T01,Analyst,68
+E0051,T02,Team Lead,33
+E0052,T02,Team Lead,21
+E0053,T02,Senior Analyst,57
+E0054,T02,Analyst,48
+E0055,T02,Analyst,56
+E0056,T02,Analyst,13
+E0057,T02,Team Lead,49
+E0058,T02,Analyst,70
+E0059,T02,Team Lead,67
+E0060,T02,Team Lead,5
+E0061,T02,Senior Analyst,63
+E0062,T02,Analyst,52
+E0063,T02,Senior Analyst,35
+E0064,T02,Team Lead,5
+E0065,T02,Senior Analyst,11
+E0066,T02,Senior Analyst,33
+E0067,T02,Team Lead,16
+E0068,T02,Team Lead,45
+E0069,T02,Analyst,8
+E0070,T02,Senior Analyst,72
+E0071,T02,Senior Analyst,25
+E0072,T02,Team Lead,62
+E0073,T02,Team Lead,64
+E0074,T02,Team Lead,26
+E0075,T02,Analyst,11
+E0076,T02,Team Lead,61
+E0077,T02,Analyst,40
+E0078,T02,Analyst,8
+E0079,T02,Analyst,8
+E0080,T02,Senior Analyst,42
+E0081,T02,Team Lead,53
+E0082,T02,Team Lead,63
+E0083,T02,Senior Analyst,7
+E0084,T02,Team Lead,27
+E0085,T02,Senior Analyst,48
+E0086,T02,Analyst,45
+E0087,T02,Senior Analyst,18
+E0088,T02,Senior Analyst,58
+E0089,T02,Senior Analyst,59
+E0090,T02,Senior Analyst,46
+E0091,T02,Analyst,66
+E0092,T02,Team Lead,66
+E0093,T02,Senior Analyst,69
+E0094,T02,Senior Analyst,13
+E0095,T02,Team Lead,57
+E0096,T02,Analyst,58
+E0097,T02,Team Lead,26
+E0098,T02,Team Lead,40
+E0099,T02,Senior Analyst,16
+E0100,T02,Analyst,44
+E0101,T03,Team Lead,40
+E0102,T03,Senior Analyst,60
+E0103,T03,Team Lead,57
+E0104,T03,Analyst,59
+E0105,T03,Senior Analyst,60
+E0106,T03,Analyst,48
+E0107,T03,Team Lead,58
+E0108,T03,Senior Analyst,10
+E0109,T03,Analyst,54
+E0110,T03,Senior Analyst,68
+E0111,T03,Team Lead,23
+E0112,T03,Analyst,21
+E0113,T03,Team Lead,59
+E0114,T03,Analyst,19
+E0115,T03,Analyst,33
+E0116,T03,Team Lead,49
+E0117,T03,Senior Analyst,52
+E0118,T03,Team Lead,7
+E0119,T03,Team Lead,22
+E0120,T03,Team Lead,60
+E0121,T03,Senior Analyst,50
+E0122,T03,Senior Analyst,12
+E0123,T03,Team Lead,20
+E0124,T03,Team Lead,49
+E0125,T03,Senior Analyst,43
+E0126,T03,Team Lead,38
+E0127,T03,Analyst,17
+E0128,T03,Analyst,26
+E0129,T03,Senior Analyst,69
+E0130,T03,Senior Analyst,18
+E0131,T03,Senior Analyst,36
+E0132,T03,Team Lead,60
+E0133,T03,Analyst,39
+E0134,T03,Team Lead,65
+E0135,T03,Analyst,18
+E0136,T03,Analyst,12
+E0137,T03,Senior Analyst,25
+E0138,T03,Team Lead,59
+E0139,T03,Analyst,43
+E0140,T03,Team Lead,47
+E0141,T03,Team Lead,11
+E0142,T03,Team Lead,72
+E0143,T03,Senior Analyst,41
+E0144,T03,Analyst,25
+E0145,T03,Senior Analyst,68
+E0146,T03,Analyst,18
+E0147,T03,Analyst,20
+E0148,T03,Analyst,66
+E0149,T03,Analyst,49
+E0150,T03,Team Lead,50
+E0151,T04,Senior Analyst,19
+E0152,T04,Team Lead,14
+E0153,T04,Analyst,42
+E0154,T04,Senior Analyst,64
+E0155,T04,Team Lead,55
+E0156,T04,Senior Analyst,12
+E0157,T04,Analyst,43
+E0158,T04,Team Lead,12
+E0159,T04,Senior Analyst,62
+E0160,T04,Team Lead,69
+E0161,T04,Senior Analyst,19
+E0162,T04,Team Lead,26
+E0163,T04,Analyst,58
+E0164,T04,Team Lead,10
+E0165,T04,Analyst,69
+E0166,T04,Analyst,41
+E0167,T04,Analyst,23
+E0168,T04,Senior Analyst,31
+E0169,T04,Senior Analyst,69
+E0170,T04,Senior Analyst,13
+E0171,T04,Senior Analyst,28
+E0172,T04,Team Lead,38
+E0173,T04,Analyst,41
+E0174,T04,Team Lead,71
+E0175,T04,Analyst,67
+E0176,T04,Team Lead,24
+E0177,T04,Team Lead,22
+E0178,T04,Analyst,46
+E0179,T04,Team Lead,8
+E0180,T04,Analyst,13
+E0181,T04,Analyst,36
+E0182,T04,Team Lead,29
+E0183,T04,Team Lead,56
+E0184,T04,Team Lead,6
+E0185,T04,Senior Analyst,72
+E0186,T04,Senior Analyst,41
+E0187,T04,Senior Analyst,34
+E0188,T04,Team Lead,54
+E0189,T04,Senior Analyst,61
+E0190,T04,Analyst,10
+E0191,T04,Analyst,59
+E0192,T04,Senior Analyst,64
+E0193,T04,Senior Analyst,29
+E0194,T04,Senior Analyst,21
+E0195,T04,Senior Analyst,43
+E0196,T04,Team Lead,47
+E0197,T04,Senior Analyst,19
+E0198,T04,Senior Analyst,68
+E0199,T04,Team Lead,16
+E0200,T04,Senior Analyst,33
+E0201,T05,Senior Analyst,18
+E0202,T05,Senior Analyst,60
+E0203,T05,Analyst,21
+E0204,T05,Analyst,9
+E0205,T05,Senior Analyst,52
+E0206,T05,Team Lead,56
+E0207,T05,Analyst,23
+E0208,T05,Senior Analyst,43
+E0209,T05,Analyst,23
+E0210,T05,Senior Analyst,68
+E0211,T05,Senior Analyst,66
+E0212,T05,Senior Analyst,66
+E0213,T05,Analyst,14
+E0214,T05,Senior Analyst,67
+E0215,T05,Senior Analyst,33
+E0216,T05,Analyst,48
+E0217,T05,Analyst,9
+E0218,T05,Senior Analyst,66
+E0219,T05,Team Lead,63
+E0220,T05,Senior Analyst,71
+E0221,T05,Analyst,16
+E0222,T05,Senior Analyst,20
+E0223,T05,Senior Analyst,49
+E0224,T05,Senior Analyst,49
+E0225,T05,Analyst,54
+E0226,T05,Analyst,27
+E0227,T05,Senior Analyst,39
+E0228,T05,Analyst,52
+E0229,T05,Team Lead,60
+E0230,T05,Team Lead,38
+E0231,T05,Team Lead,18
+E0232,T05,Analyst,15
+E0233,T05,Senior Analyst,50
+E0234,T05,Senior Analyst,49
+E0235,T05,Analyst,28
+E0236,T05,Team Lead,68
+E0237,T05,Senior Analyst,67
+E0238,T05,Analyst,8
+E0239,T05,Analyst,20
+E0240,T05,Team Lead,45
+E0241,T05,Senior Analyst,69
+E0242,T05,Senior Analyst,22
+E0243,T05,Team Lead,68
+E0244,T05,Analyst,44
+E0245,T05,Team Lead,43
+E0246,T05,Analyst,53
+E0247,T05,Team Lead,41
+E0248,T05,Team Lead,46
+E0249,T05,Team Lead,68
+E0250,T05,Team Lead,65
