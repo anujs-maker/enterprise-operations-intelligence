@@ -1,1 +1,1 @@
-{"seed":42,"records":50000,"sla_target_hours":48,"currency":"INR","cities":["Bengaluru","Gurugram","Hyderabad","Pune","Mumbai"]}
+{"seed":42,"records":500000,"as_of_date":"2026-07-01T00:00:00","seed_note":"Deterministic synthetic data; generated records are not corporate results.","currency":"INR","cities":["Bengaluru","Gurugram","Hyderabad","Pune","Mumbai"]}

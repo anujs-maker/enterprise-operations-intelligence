@@ -18,7 +18,7 @@ The standard-library implementation runs without external services. Optional pan
 
 ## Outputs
 
-- `data/processed/requests.csv` and linked dimension tables
+- `data/processed/requests.csv` and linked dimension tables (500,000 generated requests)
 - `reports/executive_summary/executive_memo.md`
 - `reports/findings/findings.md`
 - `dashboards/executive_dashboard.html` (interactive HTML dashboard, not a PBIX)

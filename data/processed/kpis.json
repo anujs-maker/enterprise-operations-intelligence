@@ -1,62 +1,64 @@
 {
   "kpis": {
-    "total_requests": 50000,
-    "closed_requests": 49775,
-    "sla_compliance_pct": 74.65,
-    "avg_turnaround_hours": 40.34,
-    "backlog": 225,
-    "operating_cost_inr": 177830890.44,
-    "avg_quality_score": 91.25
+    "total_requests": 500000,
+    "closed_requests": 497839,
+    "sla_compliance_pct": 74.6,
+    "avg_turnaround_hours": 40.47,
+    "backlog": 2161,
+    "backlog_overdue": 488,
+    "operating_cost_inr": 1771885897.13,
+    "estimated_remaining_cost_inr": 3643917.67,
+    "avg_quality_score": 91.24
   },
   "by_city": {
     "Pune": {
-      "n": 9950,
-      "breaches": 2233,
-      "cost": 34284428.86000015,
-      "hours": 390289,
-      "sla_compliance_pct": 77.56,
-      "avg_hours": 39.23,
-      "cost_inr": 34284428.86
+      "n": 99570,
+      "breaches": 22300,
+      "cost": 344708732.109999,
+      "hours": 3914462,
+      "sla_compliance_pct": 77.6,
+      "avg_hours": 39.31,
+      "cost_inr": 344708732.11
     },
     "Mumbai": {
-      "n": 10050,
-      "breaches": 2239,
-      "cost": 34734731.379999965,
-      "hours": 394518,
-      "sla_compliance_pct": 77.72,
-      "avg_hours": 39.26,
-      "cost_inr": 34734731.38
+      "n": 99665,
+      "breaches": 22636,
+      "cost": 345660452.8499974,
+      "hours": 3925567,
+      "sla_compliance_pct": 77.29,
+      "avg_hours": 39.39,
+      "cost_inr": 345660452.85
     },
     "Gurugram": {
-      "n": 10009,
-      "breaches": 3652,
-      "cost": 39156987.9000001,
-      "hours": 445638,
-      "sla_compliance_pct": 63.51,
-      "avg_hours": 44.52,
-      "cost_inr": 39156987.9
+      "n": 99736,
+      "breaches": 36487,
+      "cost": 390388680.20000124,
+      "hours": 4452867,
+      "sla_compliance_pct": 63.42,
+      "avg_hours": 44.65,
+      "cost_inr": 390388680.2
     },
     "Bengaluru": {
-      "n": 9929,
-      "breaches": 2292,
-      "cost": 34400200.09000007,
-      "hours": 390922,
-      "sla_compliance_pct": 76.92,
-      "avg_hours": 39.37,
-      "cost_inr": 34400200.09
+      "n": 99447,
+      "breaches": 22478,
+      "cost": 345096054.7600001,
+      "hours": 3922559,
+      "sla_compliance_pct": 77.4,
+      "avg_hours": 39.44,
+      "cost_inr": 345096054.76
     },
     "Hyderabad": {
-      "n": 9837,
-      "breaches": 2204,
-      "cost": 34065733.519999966,
-      "hours": 386717,
-      "sla_compliance_pct": 77.59,
-      "avg_hours": 39.31,
-      "cost_inr": 34065733.52
+      "n": 99421,
+      "breaches": 22526,
+      "cost": 346031977.20999956,
+      "hours": 3930929,
+      "sla_compliance_pct": 77.34,
+      "avg_hours": 39.54,
+      "cost_inr": 346031977.21
     }
   },
   "scenario": {
     "intervention": "Reduce Gurugram Payments Operations turnaround by 15%",
-    "modelled_cost_avoidance_inr": 1987632.76
+    "modelled_cost_avoidance_inr": 19591426.23
   }
 }
