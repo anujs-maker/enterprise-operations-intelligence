@@ -1,12 +1,271 @@
 {
-  "sla_by_city": [],
-  "backlog": [
+  "sla_by_city": [
     {
-      "backlog": 0,
-      "overdue": 0
+      "city": "Bengaluru",
+      "n": 99851,
+      "sla_pct": 77.4
+    },
+    {
+      "city": "Gurugram",
+      "n": 100238,
+      "sla_pct": 63.42
+    },
+    {
+      "city": "Hyderabad",
+      "n": 99859,
+      "sla_pct": 77.34
+    },
+    {
+      "city": "Mumbai",
+      "n": 100084,
+      "sla_pct": 77.29
+    },
+    {
+      "city": "Pune",
+      "n": 99968,
+      "sla_pct": 77.6
     }
   ],
-  "cost_by_city": [],
-  "team_productivity": [],
-  "trend": []
+  "backlog": [
+    {
+      "backlog": 2161,
+      "overdue": 488
+    }
+  ],
+  "cost_by_city": [
+    {
+      "city": "Bengaluru",
+      "cost_inr": 345096054.76,
+      "cost_per_completed": 3470.15
+    },
+    {
+      "city": "Gurugram",
+      "cost_inr": 390388680.2,
+      "cost_per_completed": 3914.22
+    },
+    {
+      "city": "Hyderabad",
+      "cost_inr": 346031977.21,
+      "cost_per_completed": 3480.47
+    },
+    {
+      "city": "Mumbai",
+      "cost_inr": 345660452.85,
+      "cost_per_completed": 3468.22
+    },
+    {
+      "city": "Pune",
+      "cost_inr": 344708732.11,
+      "cost_per_completed": 3461.97
+    }
+  ],
+  "team_productivity": [
+    {
+      "team_id": "T01",
+      "completed": 99447,
+      "avg_tat": 39.44
+    },
+    {
+      "team_id": "T02",
+      "completed": 99736,
+      "avg_tat": 44.65
+    },
+    {
+      "team_id": "T03",
+      "completed": 99421,
+      "avg_tat": 39.54
+    },
+    {
+      "team_id": "T04",
+      "completed": 99570,
+      "avg_tat": 39.31
+    },
+    {
+      "team_id": "T05",
+      "completed": 99665,
+      "avg_tat": 39.39
+    }
+  ],
+  "trend": [
+    {
+      "month": "2026-01",
+      "city": "Bengaluru",
+      "volume": 17107,
+      "prior_volume": null
+    },
+    {
+      "month": "2026-02",
+      "city": "Bengaluru",
+      "volume": 15418,
+      "prior_volume": 17107
+    },
+    {
+      "month": "2026-03",
+      "city": "Bengaluru",
+      "volume": 17313,
+      "prior_volume": 15418
+    },
+    {
+      "month": "2026-04",
+      "city": "Bengaluru",
+      "volume": 16636,
+      "prior_volume": 17313
+    },
+    {
+      "month": "2026-05",
+      "city": "Bengaluru",
+      "volume": 17238,
+      "prior_volume": 16636
+    },
+    {
+      "month": "2026-06",
+      "city": "Bengaluru",
+      "volume": 16139,
+      "prior_volume": 17238
+    },
+    {
+      "month": "2026-01",
+      "city": "Gurugram",
+      "volume": 17139,
+      "prior_volume": null
+    },
+    {
+      "month": "2026-02",
+      "city": "Gurugram",
+      "volume": 15815,
+      "prior_volume": 17139
+    },
+    {
+      "month": "2026-03",
+      "city": "Gurugram",
+      "volume": 17401,
+      "prior_volume": 15815
+    },
+    {
+      "month": "2026-04",
+      "city": "Gurugram",
+      "volume": 16602,
+      "prior_volume": 17401
+    },
+    {
+      "month": "2026-05",
+      "city": "Gurugram",
+      "volume": 17277,
+      "prior_volume": 16602
+    },
+    {
+      "month": "2026-06",
+      "city": "Gurugram",
+      "volume": 16004,
+      "prior_volume": 17277
+    },
+    {
+      "month": "2026-01",
+      "city": "Hyderabad",
+      "volume": 16907,
+      "prior_volume": null
+    },
+    {
+      "month": "2026-02",
+      "city": "Hyderabad",
+      "volume": 15519,
+      "prior_volume": 16907
+    },
+    {
+      "month": "2026-03",
+      "city": "Hyderabad",
+      "volume": 17414,
+      "prior_volume": 15519
+    },
+    {
+      "month": "2026-04",
+      "city": "Hyderabad",
+      "volume": 16755,
+      "prior_volume": 17414
+    },
+    {
+      "month": "2026-05",
+      "city": "Hyderabad",
+      "volume": 17010,
+      "prior_volume": 16755
+    },
+    {
+      "month": "2026-06",
+      "city": "Hyderabad",
+      "volume": 16254,
+      "prior_volume": 17010
+    },
+    {
+      "month": "2026-01",
+      "city": "Mumbai",
+      "volume": 17395,
+      "prior_volume": null
+    },
+    {
+      "month": "2026-02",
+      "city": "Mumbai",
+      "volume": 15565,
+      "prior_volume": 17395
+    },
+    {
+      "month": "2026-03",
+      "city": "Mumbai",
+      "volume": 17095,
+      "prior_volume": 15565
+    },
+    {
+      "month": "2026-04",
+      "city": "Mumbai",
+      "volume": 16796,
+      "prior_volume": 17095
+    },
+    {
+      "month": "2026-05",
+      "city": "Mumbai",
+      "volume": 17040,
+      "prior_volume": 16796
+    },
+    {
+      "month": "2026-06",
+      "city": "Mumbai",
+      "volume": 16193,
+      "prior_volume": 17040
+    },
+    {
+      "month": "2026-01",
+      "city": "Pune",
+      "volume": 17170,
+      "prior_volume": null
+    },
+    {
+      "month": "2026-02",
+      "city": "Pune",
+      "volume": 15546,
+      "prior_volume": 17170
+    },
+    {
+      "month": "2026-03",
+      "city": "Pune",
+      "volume": 17040,
+      "prior_volume": 15546
+    },
+    {
+      "month": "2026-04",
+      "city": "Pune",
+      "volume": 16646,
+      "prior_volume": 17040
+    },
+    {
+      "month": "2026-05",
+      "city": "Pune",
+      "volume": 17380,
+      "prior_volume": 16646
+    },
+    {
+      "month": "2026-06",
+      "city": "Pune",
+      "volume": 16186,
+      "prior_volume": 17380
+    }
+  ]
 }
