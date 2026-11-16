@@ -11,9 +11,10 @@ class TestPipeline(unittest.TestCase):
     def test_open_logic(self): self.assertTrue(all((r['status']=='Open' and r['closed_at']=='') or (r['status']=='Closed' and r['closed_at']) for r in self.req))
     def test_open_age(self): self.assertTrue(all(r['open_age_hours']==0 or r['status']=='Open' for r in self.req))
     def test_sql_python_reconciliation(self):
-        self.assertEqual(self.a['kpis']['backlog'], self.a['kpis']['backlog'])
-        self.assertTrue((ROOT/'data/processed/operations.sqlite').exists()); self.assertTrue((ROOT/'data/processed/sql_results.json').exists())
-    def test_scenario_logic(self): self.assertLessEqual(self.a['scenario']['revised_overtime_hours'],self.a['scenario']['baseline_overtime_hours']); self.assertGreater(self.a['scenario']['implementation_cost_inr'],0)
+        report=__import__('json').loads((ROOT/'data/processed/reconciliation_report.json').read_text()); self.assertTrue(report['all_pass']); self.assertTrue(all(x['status']=='PASS' for x in report['checks'])); self.assertTrue((ROOT/'data/processed/operations.sqlite').exists())
+    def test_corrupted_side_would_fail(self):
+        report=__import__('json').loads((ROOT/'data/processed/reconciliation_report.json').read_text()); check=next(x for x in report['checks'] if x['metric']=='total_requests'); self.assertGreater(abs((check['sql_value']+1)-check['python_value']),check['tolerance'])
+    def test_scenario_logic(self): self.assertEqual(self.a['scenario']['scope'],'Gurugram / Payments Operations / June 2026 opened requests'); self.assertLessEqual(self.a['scenario']['revised_overtime_hours'],self.a['scenario']['baseline_overtime_hours']); self.assertGreater(self.a['scenario']['implementation_cost_inr'],0)
     def test_zero_volume_edge_case(self):
         x=run_pipeline.analyse([]); self.assertEqual(x['kpis']['backlog'],0)
     def test_dashboard_data_contract(self):

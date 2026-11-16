@@ -21,6 +21,7 @@ The standard-library implementation runs without external services. Optional pan
 - `data/processed/requests.csv` and linked dimension tables (500,000 generated requests)
 - `reports/executive_summary/executive_memo.md`
 - `reports/findings/findings.md`
+- `data/processed/reconciliation_report.json` (executed SQL/Python KPI reconciliation)
 - `dashboards/executive_dashboard.html` (interactive HTML dashboard, not a PBIX)
 - `powerbi/README.md` and `powerbi/dax_measures.md` for native Power BI reconstruction
 - BRD, stakeholder map, requirements, KPI dictionary, process/data-flow diagrams, UAT and traceability under `docs/`
@@ -29,6 +30,8 @@ The standard-library implementation runs without external services. Optional pan
 ## Architecture
 
 Synthetic generator → validation/KPI pipeline → SQLite analytical model → SQL analysis → JSON reporting tables → browser dashboard. A Power BI-ready star-schema export and DAX definitions are included, but a genuine PBIX cannot be authored in this environment.
+
+The pipeline fails when SQL and independent Python KPI values disagree beyond documented tolerances. The financial scenario is monthly and scoped to Gurugram Payments Operations rather than applying an organisation-wide percentage; assumptions are documented in `docs/scenario_assumptions.md`.
 
 ## Reproducibility
 

@@ -57,15 +57,83 @@
       "cost_inr": 346031977.21
     }
   },
+  "city_metrics": {
+    "Bengaluru": {
+      "total_requests": 99851,
+      "completed_requests": 99447,
+      "sla_compliance_pct": 77.4,
+      "avg_turnaround_hours": 39.44,
+      "backlog": 404,
+      "overdue_backlog": 91,
+      "operating_cost_inr": 345096054.76,
+      "cost_per_completed_case": 3470.15,
+      "quality_score": 91.5
+    },
+    "Gurugram": {
+      "total_requests": 100238,
+      "completed_requests": 99736,
+      "sla_compliance_pct": 63.42,
+      "avg_turnaround_hours": 44.65,
+      "backlog": 502,
+      "overdue_backlog": 125,
+      "operating_cost_inr": 390388680.2,
+      "cost_per_completed_case": 3914.22,
+      "quality_score": 90.14
+    },
+    "Hyderabad": {
+      "total_requests": 99859,
+      "completed_requests": 99421,
+      "sla_compliance_pct": 77.34,
+      "avg_turnaround_hours": 39.54,
+      "backlog": 438,
+      "overdue_backlog": 95,
+      "operating_cost_inr": 346031977.21,
+      "cost_per_completed_case": 3480.47,
+      "quality_score": 91.5
+    },
+    "Pune": {
+      "total_requests": 99968,
+      "completed_requests": 99570,
+      "sla_compliance_pct": 77.6,
+      "avg_turnaround_hours": 39.31,
+      "backlog": 398,
+      "overdue_backlog": 89,
+      "operating_cost_inr": 344708732.11,
+      "cost_per_completed_case": 3461.97,
+      "quality_score": 91.54
+    },
+    "Mumbai": {
+      "total_requests": 100084,
+      "completed_requests": 99665,
+      "sla_compliance_pct": 77.29,
+      "avg_turnaround_hours": 39.39,
+      "backlog": 419,
+      "overdue_backlog": 88,
+      "operating_cost_inr": 345660452.85,
+      "cost_per_completed_case": 3468.22,
+      "quality_score": 91.51
+    }
+  },
   "scenario": {
-    "intervention": "Capacity-aware 15% processing-time improvement for Gurugram Payments Operations",
-    "baseline_workload_hours": 20146384,
-    "productive_capacity_hours": 32800.0,
-    "baseline_overtime_hours": 20113584.0,
-    "revised_overtime_hours": 17091626.4,
-    "overtime_cost_avoided_inr": 392854488.0,
+    "scope": "Gurugram / Payments Operations / June 2026 opened requests",
+    "reporting_period": "2026-06-01 through 2026-06-30",
+    "scope_request_count": 4011,
+    "scope_completed_count": 3794,
+    "fte": 1600,
+    "productive_hours_per_fte": 160,
+    "utilisation": 0.82,
+    "baseline_workload_hours": 228880,
+    "productive_capacity_hours": 209920.0,
+    "baseline_overtime_hours": 18960.0,
+    "improvement_pct": 15.0,
+    "revised_workload_hours": 194548.0,
+    "revised_overtime_hours": 0,
+    "overtime_rate_inr": 130,
+    "overtime_cost_avoided_inr": 2464800.0,
     "implementation_cost_inr": 250000,
-    "net_modelled_opportunity_inr": 392604488.0,
-    "payback_months": 0.01
+    "net_modelled_opportunity_inr": 2214800.0,
+    "payback_months": 0.1,
+    "cash_saving_mechanism": "avoided overtime only",
+    "capacity_released_hours": 34332.0
   }
 }

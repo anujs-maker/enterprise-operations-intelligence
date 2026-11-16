@@ -2,27 +2,27 @@
   "sla_by_city": [
     {
       "city": "Bengaluru",
-      "n": 99851,
+      "n": 99447,
       "sla_pct": 77.4
     },
     {
       "city": "Gurugram",
-      "n": 100238,
+      "n": 99736,
       "sla_pct": 63.42
     },
     {
       "city": "Hyderabad",
-      "n": 99859,
+      "n": 99421,
       "sla_pct": 77.34
     },
     {
       "city": "Mumbai",
-      "n": 100084,
+      "n": 99665,
       "sla_pct": 77.29
     },
     {
       "city": "Pune",
-      "n": 99968,
+      "n": 99570,
       "sla_pct": 77.6
     }
   ],

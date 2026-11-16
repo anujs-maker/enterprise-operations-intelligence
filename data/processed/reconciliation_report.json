@@ -1,0 +1,157 @@
+{
+  "checks": [
+    {
+      "metric": "total_requests",
+      "sql_value": 500000,
+      "python_value": 500000,
+      "difference": 0.0,
+      "tolerance": 0,
+      "status": "PASS"
+    },
+    {
+      "metric": "completed_requests",
+      "sql_value": 497839,
+      "python_value": 497839,
+      "difference": 0.0,
+      "tolerance": 0,
+      "status": "PASS"
+    },
+    {
+      "metric": "backlog",
+      "sql_value": 2161,
+      "python_value": 2161,
+      "difference": 0.0,
+      "tolerance": 0,
+      "status": "PASS"
+    },
+    {
+      "metric": "overdue_backlog",
+      "sql_value": 488,
+      "python_value": 488,
+      "difference": 0.0,
+      "tolerance": 0,
+      "status": "PASS"
+    },
+    {
+      "metric": "sla_compliance_pct",
+      "sql_value": 74.6,
+      "python_value": 74.6,
+      "difference": 0.0,
+      "tolerance": 0.01,
+      "status": "PASS"
+    },
+    {
+      "metric": "average_turnaround_hours",
+      "sql_value": 40.47,
+      "python_value": 40.47,
+      "difference": 0.0,
+      "tolerance": 0.01,
+      "status": "PASS"
+    },
+    {
+      "metric": "operating_cost_inr",
+      "sql_value": 1771885897.13,
+      "python_value": 1771885897.13,
+      "difference": 0.0,
+      "tolerance": 0.01,
+      "status": "PASS"
+    },
+    {
+      "metric": "estimated_remaining_cost_inr",
+      "sql_value": 3643917.67,
+      "python_value": 3643917.67,
+      "difference": 0.0,
+      "tolerance": 0.01,
+      "status": "PASS"
+    },
+    {
+      "metric": "cost_per_completed_request",
+      "sql_value": 3559.15,
+      "python_value": 3559.15,
+      "difference": 0.0,
+      "tolerance": 0.01,
+      "status": "PASS"
+    },
+    {
+      "metric": "Bengaluru.completed_volume",
+      "sql_value": 99447,
+      "python_value": 99447,
+      "difference": 0,
+      "tolerance": 0,
+      "status": "PASS"
+    },
+    {
+      "metric": "Bengaluru.sla_rate",
+      "sql_value": 77.4,
+      "python_value": 77.4,
+      "difference": 0.0,
+      "tolerance": 0.01,
+      "status": "PASS"
+    },
+    {
+      "metric": "Gurugram.completed_volume",
+      "sql_value": 99736,
+      "python_value": 99736,
+      "difference": 0,
+      "tolerance": 0,
+      "status": "PASS"
+    },
+    {
+      "metric": "Gurugram.sla_rate",
+      "sql_value": 63.42,
+      "python_value": 63.42,
+      "difference": 0.0,
+      "tolerance": 0.01,
+      "status": "PASS"
+    },
+    {
+      "metric": "Hyderabad.completed_volume",
+      "sql_value": 99421,
+      "python_value": 99421,
+      "difference": 0,
+      "tolerance": 0,
+      "status": "PASS"
+    },
+    {
+      "metric": "Hyderabad.sla_rate",
+      "sql_value": 77.34,
+      "python_value": 77.34,
+      "difference": 0.0,
+      "tolerance": 0.01,
+      "status": "PASS"
+    },
+    {
+      "metric": "Pune.completed_volume",
+      "sql_value": 99570,
+      "python_value": 99570,
+      "difference": 0,
+      "tolerance": 0,
+      "status": "PASS"
+    },
+    {
+      "metric": "Pune.sla_rate",
+      "sql_value": 77.6,
+      "python_value": 77.6,
+      "difference": 0.0,
+      "tolerance": 0.01,
+      "status": "PASS"
+    },
+    {
+      "metric": "Mumbai.completed_volume",
+      "sql_value": 99665,
+      "python_value": 99665,
+      "difference": 0,
+      "tolerance": 0,
+      "status": "PASS"
+    },
+    {
+      "metric": "Mumbai.sla_rate",
+      "sql_value": 77.29,
+      "python_value": 77.29,
+      "difference": 0.0,
+      "tolerance": 0.01,
+      "status": "PASS"
+    }
+  ],
+  "all_pass": true
+}
