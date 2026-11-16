@@ -1,0 +1,12 @@
+{
+  "sla_by_city": [],
+  "backlog": [
+    {
+      "backlog": 0,
+      "overdue": 0
+    }
+  ],
+  "cost_by_city": [],
+  "team_productivity": [],
+  "trend": []
+}

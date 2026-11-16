@@ -1,64 +1,25 @@
 {
   "kpis": {
-    "total_requests": 500000,
-    "closed_requests": 497839,
-    "sla_compliance_pct": 74.6,
-    "avg_turnaround_hours": 40.47,
-    "backlog": 2161,
-    "backlog_overdue": 488,
-    "operating_cost_inr": 1771885897.13,
-    "estimated_remaining_cost_inr": 3643917.67,
-    "avg_quality_score": 91.24
+    "total_requests": 0,
+    "closed_requests": 0,
+    "sla_compliance_pct": 0,
+    "avg_turnaround_hours": 0,
+    "backlog": 0,
+    "backlog_overdue": 0,
+    "operating_cost_inr": 0,
+    "estimated_remaining_cost_inr": 0,
+    "avg_quality_score": 0
   },
-  "by_city": {
-    "Pune": {
-      "n": 99570,
-      "breaches": 22300,
-      "cost": 344708732.109999,
-      "hours": 3914462,
-      "sla_compliance_pct": 77.6,
-      "avg_hours": 39.31,
-      "cost_inr": 344708732.11
-    },
-    "Mumbai": {
-      "n": 99665,
-      "breaches": 22636,
-      "cost": 345660452.8499974,
-      "hours": 3925567,
-      "sla_compliance_pct": 77.29,
-      "avg_hours": 39.39,
-      "cost_inr": 345660452.85
-    },
-    "Gurugram": {
-      "n": 99736,
-      "breaches": 36487,
-      "cost": 390388680.20000124,
-      "hours": 4452867,
-      "sla_compliance_pct": 63.42,
-      "avg_hours": 44.65,
-      "cost_inr": 390388680.2
-    },
-    "Bengaluru": {
-      "n": 99447,
-      "breaches": 22478,
-      "cost": 345096054.7600001,
-      "hours": 3922559,
-      "sla_compliance_pct": 77.4,
-      "avg_hours": 39.44,
-      "cost_inr": 345096054.76
-    },
-    "Hyderabad": {
-      "n": 99421,
-      "breaches": 22526,
-      "cost": 346031977.20999956,
-      "hours": 3930929,
-      "sla_compliance_pct": 77.34,
-      "avg_hours": 39.54,
-      "cost_inr": 346031977.21
-    }
-  },
+  "by_city": {},
   "scenario": {
-    "intervention": "Reduce Gurugram Payments Operations turnaround by 15%",
-    "modelled_cost_avoidance_inr": 19591426.23
+    "intervention": "Capacity-aware 15% processing-time improvement for Gurugram Payments Operations",
+    "baseline_workload_hours": 0,
+    "productive_capacity_hours": 32800.0,
+    "baseline_overtime_hours": 0,
+    "revised_overtime_hours": 0,
+    "overtime_cost_avoided_inr": 0,
+    "implementation_cost_inr": 250000,
+    "net_modelled_opportunity_inr": -250000,
+    "payback_months": 250000.0
   }
 }
